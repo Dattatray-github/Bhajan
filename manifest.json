@@ -1,0 +1,20 @@
+{
+  "name": "मराठी भजन अ‍ॅप",
+  "short_name": "भजन",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fff7e6",
+  "theme_color": "#ff9800",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
