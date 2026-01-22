@@ -1,12 +1,12 @@
-// Switch between sections
-function showSection(sectionId) {
-  document.querySelectorAll('.content').forEach(section => {
-    section.classList.remove('active');
-  });
-  document.getElementById(sectionId).classList.add('active');
+function showAarti(key) {
+  document.getElementById("aartiContent").innerText = aartis[key];
 }
 
-// Light / Dark mode toggle
-function toggleTheme() {
-  document.body.classList.toggle('dark');
+function showBhajan(key) {
+  document.getElementById("bhajanContent").innerText = bhajans[key];
+}
+
+function loadHaripath(type) {
+  document.getElementById("haripathContent").innerText =
+    type === "dnyaneshwar" ? haripathDnyaneshwar : haripathEknath;
 }
