@@ -7,6 +7,13 @@
   box-sizing: border-box;
 }
 
+header {
+  font-weight: 700;          /* bold */
+  text-align: center;        /* center text */
+  font-size: 1.4rem;         /* mobile-friendly size */
+  padding: 16px 12px;
+}
+
 /* =====================
    HOME PAGE CONTAINER
 ===================== */
