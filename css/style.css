@@ -92,7 +92,7 @@ body.dark .content {
 ===================== */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 14px;
   margin-top: 18px;
 }
@@ -107,6 +107,7 @@ body.dark .content {
   cursor: pointer;
   box-shadow: 0 6px 14px rgba(0,0,0,0.14);
   border: 1px solid rgba(180,120,50,0.25);
+  margin-bottom: 12px;
 }
 
 .card span {
@@ -127,6 +128,11 @@ body.dark .card span {
 /* =====================
    TABLET
 ===================== */
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (min-width: 768px) {
   body {
     max-width: 650px;
