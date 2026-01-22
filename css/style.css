@@ -120,3 +120,54 @@ header {
   white-space: pre-line;
   line-height: 1.8;
 }
+
+/* =======================
+   Devotional Cards UI
+   ======================= */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.card {
+  background: linear-gradient(145deg, #fff3e0, #f3d19c);
+  border-radius: 18px;
+  padding: 22px 10px;
+  text-align: center;
+  font-size: 26px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card span {
+  display: block;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #5a2e0f;
+}
+
+.card:active {
+  transform: scale(0.96);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Dark Mode Cards */
+.dark .card {
+  background: linear-gradient(145deg, #2a1a0a, #3b2a1a);
+}
+
+.dark .card span {
+  color: #f5deb3;
+}
+
+/* Tablets / Large Screens */
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
