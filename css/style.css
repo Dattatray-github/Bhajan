@@ -8,6 +8,16 @@
 }
 
 /* =====================
+   HOME PAGE CONTAINER
+===================== */
+.container {
+  display: flex;
+  flex-direction: column;   /* 👈 ONE CARD PER ROW */
+  gap: 18px;
+  padding: 20px 10px;
+}
+
+/* =====================
    BASE
 ===================== */
 body {
@@ -98,23 +108,27 @@ body.dark .content {
 }
 
 .card {
-  background: linear-gradient(145deg, #fff1d6, #f3d19c);
-  border-radius: 18px;
-  padding: 18px 10px;
+  background: linear-gradient(145deg, #fff3e0, #f3d19c);
+  border-radius: 22px;
+  padding: 22px 14px;
+  font-size: 16px;
   text-align: center;
-  font-size: 16px;          /* ✅ FIX */
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.14);
-  border: 1px solid rgba(180,120,50,0.25);
+  text-decoration: none;
+  color: #3b2f2f;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+  border: 1px solid rgba(180,120,50,0.3);
+  transition: transform 0.15s ease;
   margin-bottom: 12px;
 }
-
 .card span {
   display: block;
   margin-top: 6px;
   font-size: 13px;          /* ✅ FIX */
   font-weight: 500;
+}
+
+.card:active {
+  transform: scale(0.97);
 }
 
 body.dark .card {
