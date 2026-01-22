@@ -115,6 +115,7 @@ body.dark .content {
 }
 
 .card {
+  font-weight: 700;
   background: linear-gradient(145deg, #fff3e0, #f3d19c);
   border-radius: 22px;
   padding: 22px 14px;
