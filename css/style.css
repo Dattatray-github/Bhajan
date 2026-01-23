@@ -127,6 +127,8 @@ body.dark .content {
   border: 1px solid rgba(180,120,50,0.3);
   transition: transform 0.15s ease;
   margin-bottom: 12px;
+  position: relative; /* important for glow */
+
 }
 .card span {
   display: block;
@@ -134,9 +136,14 @@ body.dark .content {
   font-size: 13px;          /* ✅ FIX */
   font-weight: 500;
 }
-
+  
+/* Glow on tap / active */
 .card:active {
   transform: scale(0.97);
+  box-shadow:
+    0 0 10px rgba(255, 153, 51, 0.6),
+    0 0 20px rgba(255, 153, 51, 0.5),
+    0 0 30px rgba(255, 153, 51, 0.4);
 }
 
 body.dark .card {
