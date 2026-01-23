@@ -110,7 +110,7 @@ body.dark .content {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* ✅ 2 cards per row */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 14px;
   margin-top: 18px;
 }
