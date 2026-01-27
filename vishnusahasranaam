@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>विष्णु सहस्त्रनाम</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>विष्णु सहस्त्रनाम</header>
+
+<div class="content">
+<script src="data/vishnu-sahasranaam.js"></script>
+<script>
+  document.write(vishnusahasranaam);
+</script>
+</div>
+
+</body>
+</html>
